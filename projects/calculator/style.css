@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight:  500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+}
+
+.calculator {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:  0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 320px;
+}
+
+.display {
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-align:  right;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 2em;
+    text-align: right;
+    color: #333;
+    font-weight: 500;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size:  1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #f8f9fa;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn.operator {
+    background: #667eea;
+    color: white;
+}
+
+. btn.operator:hover {
+    background: #5568d3;
+}
+
+.btn.clear {
+    background: #ff6b6b;
+    color:  white;
+}
+
+.btn. clear:hover {
+    background:  #ff5252;
+}
+
+.btn.delete {
+    background: #ffa502;
+    color: white;
+}
+
+.btn.delete:hover {
+    background: #ff9500;
+}
+
+.btn. equals {
+    background: #51cf66;
+    color: white;
+}
+
+.btn.equals:hover {
+    background: #40c057;
+}
