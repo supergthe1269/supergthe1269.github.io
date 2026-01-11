@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #667eea;
+            padding: 50px;
+        }
+        h1 { color: white; }
+        #board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 5px;
+            margin: 20px auto;
+            width: 310px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border: none;
+            font-size: 40px;
+            cursor: pointer;
+        }
+        .cell:hover { background: #f0f0f0; }
+        button {
+            background: white;
+            border: none;
+            padding: 10px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="status">Player X's Turn</h1>
+    <div id="board"></div>
+    <button onclick="reset()">Restart</button>
+
+    <script>
+        let board = ['','','','','','','','',''];
+        let player = 'X';
+        let gameOver = false;
+        const wins = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+
+        for(let i = 0; i < 9; i++) {
+            document.getElementById('board').innerHTML += `<button class="cell" onclick="play(${i})"></button>`;
+        }
+
+        function play(i) {
+            if(board[i] || gameOver) return;
+            board[i] = player;
+            document.getElementsByClassName('cell')[i].textContent = player;
+            
+            for(let w of wins) {
+                if(board[w[0]] && board[w[0]] === board[w[1]] && board[w[1]] === board[w[2]]) {
+                    document.getElementById('status').textContent = `Player ${player} Wins! 🎉`;
+                    gameOver = true;
+                    return;
+                }
+            }
+            
+            if(!board.includes('')) {
+                document.getElementById('status').textContent = "It's a Tie!";
+                gameOver = true;
+                return;
+            }
+            
+            player = player === 'X' ? 'O' : 'X';
+            document.getElementById('status').textContent = `Player ${player}'s Turn`;
+        }
+
+        function reset() {
+            board = ['','','','','','','','',''];
+            player = 'X';
+            gameOver = false;
+            document.querySelectorAll('.cell').forEach(cell => cell.textContent = '');
+            document.getElementById('status').textContent = "Player X's Turn";
+        }
+    </script>
+</body>
+</html>
