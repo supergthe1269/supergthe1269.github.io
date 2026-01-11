@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - New Year Party 2026</title>
+</head>
+
+<body bgcolor="#fffbf0">
+
+    <header align="center">
+        <h1>
+            <u>Event Registration</u>
+        </h1>
+        <p><a href="final.html">
+                &larr; Back to Home
+            </a></p>
+    </header>
+
+    <hr>
+
+    <section align="center">
+        <h2>
+            <font color="#2c2c2c">New Year Party 2026</font>
+        </h2>
+        <p><em>Fill in your details to secure your spot!</em></p>
+
+        <form action="thankyou-registration.html" method="GET">
+            <table cellpadding="8" align="center" bgcolor="#f5f5dc" border="1">
+                <tr>
+                    <td><label for="name"><strong>Full Name:</strong></label></td>
+                    <td><input type="text" id="name" name="name" placeholder="name" required size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email"><strong>Email:</strong></label></td>
+                    <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required
+                            size="30"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone"><strong>Phone Number:</strong></label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="+91-9876543210" required size="30"></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Gender:</strong></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="age"><strong>Age:</strong></label></td>
+                    <td><input type="number" id="age" name="age" min="6" max="100" placeholder="18" required></td>
+                </tr>
+
+                <tr>
+                    <td><strong>Event Type:</strong></td>
+                    <td>
+                        <input type="checkbox" id="dinner" name="event_type" value="dinner">
+                        <label for="dinner">Dinner</label><br>
+
+                        <input type="checkbox" id="dance" name="event_type" value="dance">
+                        <label for="dance">DJ Night</label><br>
+
+                        <input type="checkbox" id="games" name="event_type" value="games">
+                        <label for="games">Games</label><br>
+
+                        <input type="checkbox" id="countdown" name="event_type" value="countdown">
+                        <label for="countdown">Countdown Event</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="ticket"><strong>Ticket Type:</strong></label></td>
+                    <td>
+                        <select id="ticket" name="ticket" required>
+                            <option value="">Select Ticket Type</option>
+                            <option value="single">Single - &#8377;150</option>
+                            <option value="couple">Couple - &#8377;250</option>
+                            <option value="family">Family (4 members) - &#8377;450</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit">
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer align="center">
+        <p><small>&copy; 2026 New Year Party.</small></p>
+    </footer>
+
+</body>
+
+</html>

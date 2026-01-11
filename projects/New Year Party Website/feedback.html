@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - New Year Party 2026</title>
+</head>
+
+<body bgcolor="#fffbf0">
+
+    <header align="center">
+        <h1>
+            <u>Event Feedback</u>
+        </h1>
+        <p><a href="final.html">
+                &larr; Back to Home
+        </a></p>
+    </header>
+
+    <hr>
+
+    <section align="center">
+        <h3>
+            Help us improve our future events by giving your valuable feedback!
+        </h3>
+
+        <form action="thankyou-feedback.html" method="GET">
+            <table cellpadding="8" align="center" bgcolor="#f5f5dc" border="1">
+                <tr>
+                    <td><label for="fname"><strong>Name:</strong></label></td>
+                    <td><input type="text" id="fname" name="fname" placeholder="Enter your name" required size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email"><strong>Email:</strong></label></td>
+                    <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="rating"><strong>Overall Rating:</strong></label></td>
+                    <td>
+                        <select id="rating" name="rating" required>
+                            <option value="">Select Rating</option>
+                            <option value="5">&starf;&starf;&starf;&starf;&starf; Excellent</option>
+                            <option value="4">&starf;&starf;&starf;&starf; Very Good</option>
+                            <option value="3">&starf;&starf;&starf; Good</option>
+                            <option value="2">&starf;&starf; Fair</option>
+                            <option value="1">&starf; Poor</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="venue"><strong>Venue Rating:</strong></label></td>
+                    <td>
+                        <select id="venue" name="venue">
+                            <option value="">Rate the Venue</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Good</option>
+                            <option value="2">Fair</option>
+                            <option value="1">Poor</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="food"><strong>Food Quality:</strong></label></td>
+                    <td>
+                        <select id="food" name="food">
+                            <option value="">Rate the Food</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Good</option>
+                            <option value="2">Fair</option>
+                            <option value="1">Poor</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="entertainment"><strong>Entertainment:</strong></label></td>
+                    <td>
+                        <select id="entertainment" name="entertainment">
+                            <option value="">Rate the Entertainment</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Very Good</option>
+                            <option value="3">Good</option>
+                            <option value="2">Fair</option>
+                            <option value="1">Poor</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Would you recommend to others?</strong></td>
+                    <td>
+                        <input type="radio" id="yes" name="recommend" value="yes">
+                        <label for="yes">Yes</label>
+                        &nbsp;&nbsp;
+                        <input type="radio" id="no" name="recommend" value="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="comments"><strong>Comments:</strong></label></td>
+                    <td>
+                        <textarea id="comments" name="comments" rows="5" cols="25"
+                            placeholder="Any thoughts or suggestions..."></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit">
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <hr>
+    
+    <footer align="center">
+        <p><small>&copy; 2026 New Year Party.</small></p>
+    </footer>
+
+</body>
+</html>
